@@ -1,0 +1,45 @@
+*{
+        font-family: cursive;
+
+}
+body{
+    background-color: burlywood;
+}
+.header{
+    background-color: lightblue;
+    border:2px solid rgb(22, 34, 34);
+    margin-bottom: 20px;
+    text-align: center;
+        border-radius: 20px;
+
+}
+.container{
+    padding:20px;
+
+}
+.content{
+    padding:20px;
+}
+.section{
+    margin:20px;
+        border-radius: 20px;
+
+
+}
+.card{
+    width: 300px;
+    padding:16px;
+    border:10px solid chartreuse;
+    background-color: aquamarine;
+    margin: auto;
+        border-radius: 20px;
+
+
+}
+.footer{
+    background-color: chocolate;
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    padding: 1%;
+    border-radius: 20px;
+}

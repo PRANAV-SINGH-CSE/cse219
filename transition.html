@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding: 10px 20px;
+            margin:20%;
+            color: rgb(227, 212, 6);
+            border: none;
+            transition: background-color 0.5s ease;
+            background-color: black;
+        }
+        .btn:hover{
+            background-color: #0056b3;
+            transform:scale(2.5)
+        }
+
+        .box{
+            width: 200px;
+            height:200px;
+            background-color: red;
+            transition: background-color 1s ease-in-out, font-size 0.6s ease, font-family 0.6s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+            background:blue;
+            font-family: fantasy;
+            font-size: 200%;
+        }
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: width ease-in-out 0.5s, height ease-in-out 0.5s, background-color 0.5s ease-in-out;
+        }
+        .one:hover{
+            width: 400px;
+            height: 500px;
+            background-color: #0056b3;
+            font-size: 500%;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click me</button>
+    <div class="box">Font changed</div><Br><br><Br>
+    <div class="one">This is one</div>
+</body>
+</html>

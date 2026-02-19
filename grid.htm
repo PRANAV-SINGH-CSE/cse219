@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: cursive;
+        }
+        h1{
+              margin:40px;
+              text-align: center;
+              background-color: black;
+              color: white;
+              padding-top: 1%;
+              padding-bottom: 1%;
+              border-radius: 20px;
+        }
+        img{
+            width:300px;
+        }
+        .gallery{
+            display: grid;
+            gap:20px;
+            margin:auto;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Photo gallery</h1>
+    <div class="gallery">
+        <img src="1.jpg" alt="Photo 1">
+        <img src="1.jpg" alt="Photo 2">
+        <img src="1.jpg" alt="Photo 3">
+        <img src="1.jpg" alt="Photo 4">
+        <img src="1.jpg" alt="Photo 5">
+        <img src="1.jpg" alt="Photo 6">
+     </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant</title>
+
+<style>
+/* Background with opacity */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("1751710180650.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+#header {
+    background-color: rgb(237, 141, 23);
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Slideshow */
+#slideshow {
+    text-align: center;
+    margin: 20px;
+}
+
+#slideshow img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+button {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#count {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="header">Restaurant</div>
+
+<!-- Slideshow -->
+<div id="slideshow">
+    <img id="slide" src="1.jpg">
+</div>
+
+<!-- Cards -->
+<div class="container">
+    <div class="card">
+        <img src="1.jpg">
+        <p>Pizza</p>
+        <button onclick="addItem()">ADD</button>
+    </div>
+
+    <div class="card">
+        <img src="1751710180650.jpg">
+        <p>Burger</p>
+        <button onclick="addItem()">ADD</button>
+    </div>
+</div>
+
+<p id="count">Items Added: <span id="itemCount">0</span></p>
+
+<script>
+/* Slideshow */
+let images = [
+    "1.jpg",
+    "1751710180650.jpg",
+    "1751718985887.jpg",
+   
+];
+let index = 0;
+
+setInterval(() => {
+    document.getElementById("slide").src = images[index];
+    index = (index + 1) % images.length;
+}, 2000);
+
+/* Add item counter */
+let count = 0;
+function addItem() {
+    count++;
+    document.getElementById("itemCount").innerText = count;
+}
+</script>
+
+</body>
+</html>

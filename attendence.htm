@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- create a attendance managment system ,current attendance is 10 lecture check the new attendence if lecture attendented or not show the result eligible to attend the exam or not.
+    threshold value is 20 lecutres total value is 40 lectures -->
+
+    <script>
+        function attendance(name){
+            var count = 10;
+            var total = 40;
+            var min = 20;
+
+            function mark(present){
+                if(present){
+                    count++;
+                    console.log(name + " attended");
+                } else {
+                    console.log(name + " absent");
+                }
+                console.log("Total: " + count);
+            }
+
+            function check(){
+                console.log("Student: " + name);
+                console.log("Attended: " + count + "/" + total);
+                
+                if(count >= min){
+                    console.log("Eligible for exam");
+                } else {
+                    console.log("Not eligible. Need " + (min - count) + " more");
+                }
+            }
+
+            mark(true);
+            mark(false);
+            mark(true);
+            check();
+        }
+
+        attendance("Pranav");
+    </script>
+    
+</body>
+</html>

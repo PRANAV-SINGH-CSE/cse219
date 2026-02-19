@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <select id="colorselect">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <p>
+        selected color : <span id="selected-color">red</span>
+    </p> -->
+    <!-- <script>
+        document.getElementById("colorselect").onchange = 
+        function(){
+            document.getElementById("selected-color").innerText =this.value
+        }
+    </script> -->
+
+        <div id="box" style="width: 100px;height: 100px;background-color: blue;"></div>
+
+
+    <script>
+        document.getElementById("box").onmouseover = 
+        function(){
+            box.style.backgroundColor = "cyan";
+        }
+        document.getElementById("box").onmouseout = 
+        function(){
+            box.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<img id="slider" src="1.jpg" width="300" height="200">
+<br><br>
+
+<button onclick="previous()">Previous</button>
+<button onclick="next()">Next</button>
+
+<script>
+let images = ["1.jpg","forgex.jpg","1751710180650.jpg","1751718985887.jpg"];
+let i = 0;
+function showImage(){
+    document.getElementById("slider").src = images[i];
+}
+function next(){
+    i++;
+    if(i >= images.length){
+        i = 0;
+    }
+    showImage();
+}
+
+function previous(){
+    i--;
+    if(i < 0){
+        i = images.length - 1;
+    }
+    showImage();
+}
+</script>
+
+</body>
+</html>

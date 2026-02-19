@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="1.jpg" width="300" id="main"><br><br>
+
+    <img src="1751710180650.jpg" width="300"  onclick="changeImage(this)">
+    <img src="1.jpg" width="300"  onclick="changeImage(this)">
+    <img src="1751718985887.jpg" width="300" onclick="changeImage(this)"><br><br>
+    <script>
+        function changeImage(img){
+            document.getElementById("main").src=img.src
+        }
+    </script>
+</body>
+</html>

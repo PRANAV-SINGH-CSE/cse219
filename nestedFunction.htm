@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function bankaccount(accountholder){
+            var balance=1000
+            function deposit(amount){
+                balance+=amount
+                console.log(accountholder+" deposited "+amount+" and now balance is "+balance)
+            }
+            function withdraw(amount){
+                balance=balance-amount
+                console.log(accountholder+" withdrew "+amount)
+                    console.log("new balance"+balance)
+               
+            }
+            deposit(500)
+            withdraw(200)
+        }
+        bankaccount("pranav")
+    </script> -->
+
+    <script>
+        function order(product, price, tax){
+            function calculateprice(price,tax){
+                return price+tax
+            }
+            function printbill(total){
+                console.log("product: "+product)
+                console.log("price: "+price)
+                console.log("tax: "+tax)
+                console.log("total price: "+total)
+            }
+            var total=calculateprice(price,tax)
+            printbill(total)
+        }
+        order("laptop", 50000, 5000)
+        
+    </script>
+    
+</body>
+</html>

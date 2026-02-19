@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: bisque;
+            font-family: fantasy;
+        }
+        .box{
+            width: 220px;
+            height: 220px;
+            background-color: aquamarine;
+            color: rgb(159, 14, 238);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            animation: pulse 2s infinite alternate ease-in-out;
+        }
+        .img{
+            border-radius: 50%;
+            transition: transform 1s ease, background-color 0.5s ease;
+            animation: movebox 2s infinite ;
+
+        }
+        img{
+            border-radius: 50%;
+        }
+        .img:hover{
+            transform: scale(1.5);
+        }
+            @keyframes pulse{
+                0%{
+                    transform: scale(1);
+                    background-color: beige;
+                }
+                50%{
+                    transform: scale(2.5);
+                    background-color: beige;
+                    font-size: 150%;
+                    color: rgb(241, 6, 209);
+                    border-radius: 25px;
+
+                }
+                100%{
+                    transform: scale(1.2);
+                }
+        }
+        @keyframes movebox{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div><br><br><br>
+    <div class="img">
+        <img src="1.jpg" alt="developer" width="200px" height="200px">
+    </div>
+    <script>
+        const text = prompt("Enter text for the box:") ;
+        document.getElementById("box").innerText = text;
+    </script>
+</body>
+</html>

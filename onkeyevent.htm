@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="key input" placeholder="press any key">
+    <p>key pressed <span id="key-pressed"></span></p>
+    <script>
+        document.getElementById("key input").onkeypress=function(){
+            document.getElementById("key-pressed").innerText=event.key
+        }
+    </script>
+</body>
+</html>
+
+task 
+create a form and apply events on it 
+1, name of the user should be displayed in a paragragh
+2, create a dropdown of subjects ,display which subject is choosen through a para
+3, apply it color and text should change from submit to submitted .

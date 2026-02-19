@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //creating an array
+        let fruits = ["apple", "orange", "cherry"]
+            //addingan element in this array
+        fruits.push("grapes"
+
+            )
+            //display this array
+        document.write("Fruits list: <br>")
+        for (let i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>")
+        }
+
+        //displey array length
+        document.write("<br> total fruits: " + fruits.length + "<br><br>")
+            //add to the start
+        fruits.unshift("mango ")
+        fruits.pop() //remove the last element
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

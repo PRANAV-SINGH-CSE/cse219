@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+
+<style>
+body {
+text-align: center;
+background-color: rgb(255, 255, 4);
+font-family: Arial;
+}
+
+button {
+width: 140px;
+height: 40px;
+font-size: 16px;
+margin: 5px;
+border: 2px solid black;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Calculator</h1>
+
+<button onclick="add()">Addition</button><br>
+
+    <button onclick="sub()">Subtraction</button><br>
+    
+    <button onclick="mul()">Multiplication</button><br>
+
+    <button onclick="div()">Division</button><br>
+
+    <button onclick="mod()">Modulus</button>
+
+<script>
+function add() {
+let a = prompt("Enter first number");
+
+    let b = prompt("Enter second number");
+
+    let result = Number(a) + Number(b);
+alert("Addition = " + result);
+}
+
+function sub() {
+let a = prompt("Enter first number");
+
+    let b = prompt("Enter second number");
+
+let result = a - b;
+
+alert("Subtraction = " + result);
+}
+
+function mul() {
+    let a = prompt("Enter first number");
+
+    let b = prompt("Enter second number");
+
+let result = a * b;
+
+
+alert("Multiplication = " + result);
+}
+
+
+
+function div() {
+let a = prompt("Enter first number");
+
+let b = prompt("Enter second number");
+
+    let result = a / b;
+alert("Division = " + result);
+}
+
+function mod() {
+let a = prompt("Enter first number");
+    let b = prompt("Enter second number");
+
+    let result = a % b;
+alert("Modulus = " + result);
+}
+</script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //function input
+    <input type="text" id="num1" placeholder="enter the first two number">
+    <input type="text" id="num2" placeholder="enter the second number">
+    <button onclick="add()">add</button>
+    <button onclick="div()">div</button>
+    <button onclick="multi()">multi</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="percentage()">percentage</button>
+<p id="result"></p>
+<script>
+    function add() {
+        num1 = Number(document.getElementById('num1').value)
+        num2 = Number(document.getElementById('num2').value)
+        sum = num1 + num2
+        document.getElementById('result').innerText = "The sum is: " + sum
+    }
+    function div() {
+        num1 = Number(document.getElementById('num1').value)
+        num2 = Number(document.getElementById('num2').value)
+        sum = num1 / num2
+        document.getElementById('result').innerText = "The sum is: " + sum
+    }
+    function multi() {
+        num1 = Number(document.getElementById('num1').value)
+        num2 = Number(document.getElementById('num2').value)
+        sum = num1 * num2
+        document.getElementById('result').innerText = "The sum is: " + sum
+    }
+    function sub() {
+        num1 = Number(document.getElementById('num1').value)
+        num2 = Number(document.getElementById('num2').value)
+        sum = num1 - num2
+        document.getElementById('result').innerText = "The sum is: " + sum
+    }
+    function percentage() {
+        num1 = Number(document.getElementById('num1').value)
+        num2 = Number(document.getElementById('num2').value)
+        sum = (num1 / num2)*100
+        document.getElementById('result').innerText = "The sum is: " + sum
+    }
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const greet=(name)=>{
+            document.write("hellor "+name)
+        }
+        greet("pranav")
+    </script>
+</body>
+</html>
